@@ -6,7 +6,7 @@ import pandas as pd
 from email.mime.text import MIMEText
 from email.header import Header
 
-url = "http://jw1.hustwenhua.net/jwglxt/cjcx/cjcx_cxXsgrcj.html?doType=query&gnmkdm=N305005&su=210501050092"
+url = "http://jw1.hu******ua.net/jwglxt/cjcx/cjcx_cxXsgrcj.html?doType=query&gnmkdm=N305005&su=21********92"
 
 header = {
     "Cookie": "JSESSIONID=DE9E2ACB7633F229D963580FAE8B1899; route=ec9f1523782f6fc8f64960f81492aa8e",
@@ -56,16 +56,16 @@ f1.close()
 message = MIMEText(main_body, "html", "utf-8")
 
 # 发件人姓名
-message['From'] = Header("软件2103 尤钰佳")
+message['From'] = Header("**2103***")
 # 收件人姓名
 message['To'] = Header(" ")
 # 邮件标题
-subject = "尤钰佳发来的邮件(学期成绩)"
+subject = "***发来的邮件(学期成绩)"
 message['Subject'] = Header(subject, "utf-8")
 # 发送方
-sender = "2995639892@qq.com"
+sender = "299****92@qq.com"
 # 接收方
-receiver = "2471130455@qq.com"
+receiver = "24******55@qq.com"
 # 使用QQ邮箱服务，发送邮箱
 smtpObj = smtplib.SMTP_SSL("smtp.qq.com", 465)
 smtpObj.login(sender, 'dfawrmiyaarldfaf')
